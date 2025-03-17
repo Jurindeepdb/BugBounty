@@ -1,0 +1,172 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('NTBrickSans.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: 'CustomFont';
+    background: linear-gradient(0deg, #FFB3C6, #FFC2D1);
+    padding: 20px;
+    margin: 0;
+    height: auto;
+    font-size: 1em;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    padding-bottom: 70px;
+}
+header{
+    width: 100%; /* Full width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #800f2f;
+    flex-direction: column;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+header h1{
+    font-size: 4em;
+    padding-top: 10px;
+    margin: 0;
+}
+
+#intro {
+    min-height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Horizontally centered */
+    gap: 20px; /* Adds space between elements */
+    padding-top: 30px;
+}
+
+#intro button{
+    background-color: #800f2f;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.145);
+    height: 80px;
+    width: 180px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    font-size: 1.5em;
+    font-weight: 100;
+    margin: 20px;
+    font-family: 'CustomFont';
+    color: #FFB3C6;
+}
+
+#intro button:hover {
+    background-color: #ff5c85;
+    color: #800f2f;
+    transform: scale(1.05);
+}
+
+#attempt {
+    padding-top: 10px;
+}
+
+/* 
+h1 {
+    font-family: 'CustomFont';
+    text-align: center;
+    font-size: 4em;
+    margin: 0;
+} */
+.question {
+    background-color: #ff5c85;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px #800f2f9c;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #800f2f;
+}
+
+.bonus {
+    grid-column: 2/3; /* Make it span across all 3 columns */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+}
+.question h2 {
+    color: #800f2f;
+}
+
+.question p {
+    color: #ffffff;
+    cursor: default;
+}
+
+.question button {
+    background-color: #c9184a;
+    color: #FFB3C6;
+    box-shadow: none;
+    height: 50px;
+    width: 120px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    font-family: 'CustomFont';
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.225);
+}
+
+.question button:hover {
+    transform: scale(1.05);
+}
+
+ul {
+    padding-left: 40px;
+}
+
+ul li.levels {
+    display: grid;
+    grid-template-columns: 80px 10px auto; /* 3 columns */
+    gap: 10px;
+    align-items: center;
+    position: relative;
+}
+
+ul li.levels::before {
+    content: "•"; /* Manually add the bullet */
+    position: absolute;
+    left: -20px;
+}
+
+ul li.levels {
+    display: grid;
+    grid-template-columns: 80px 10px auto; /* 3 columns */
+    gap: 10px;
+    align-items: start; /* This fixes the wrapping */
+}
+
+ul li.levels p {
+    margin: 0; /* Remove extra margin */
+}
+li {
+    white-space: normal; /* Allows wrapping */
+    max-width: 850px; /* Optional: Prevents it from becoming too wide */
+    line-height: 1.5; /* Better readability */
+    margin: 40px;
+}
+.rules{
+    background-color: #ff5c85;
+    border-radius: 50px;
+    color: #590d22;
+}
+.rules h3, ol{
+    margin: 40px;
+}
+.b{
+    list-style: disc;
+}
+span{
+    top: -8px;
+    position: relative;
+}
